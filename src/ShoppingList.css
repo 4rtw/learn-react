@@ -1,0 +1,11 @@
+.ShoppingList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px;
+}
+
+.ShoppingList-categorie {
+  width: 100%;
+}

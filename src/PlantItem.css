@@ -1,0 +1,33 @@
+.PlantItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2%;
+}
+
+.PlantItem-price {
+  background-color: #31b472;
+  padding: 15px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px 20px 20px 0;
+  width: fit-content;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.PlantItem-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.PlantItem-specs {
+  display: flex;
+  flex-direction: row;
+}
+
+.PlantItem-add-button {
+  width: fit-content;
+  margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+.Banner {
+  border-bottom: 3px black solid;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Banner-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  gap: 25px;
+}
+
+.Banner-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.Banner-logo {
+  height: 45px;
+  width: 45px;
+}
