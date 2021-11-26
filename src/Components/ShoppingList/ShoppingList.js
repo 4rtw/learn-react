@@ -1,8 +1,8 @@
 import React from "react";
 import "./ShoppingList.css";
-import PlantItem from "./PlantItem";
-import Plant from "./Model/Plant";
-import Categories from "./Categories";
+import PlantItem from "./../PlantItem/PlantItem";
+import Plant from "../../Model/Plant";
+import Categories from "./../Categorie/Categories";
 
 export default class ShoppingList extends React.Component {
   state = {
@@ -31,7 +31,11 @@ export default class ShoppingList extends React.Component {
           <Categories onCategorieChange={this.onCategorieChange} />
         </div>
         {this.state.plantList.map(plant => {
-          return <PlantItem key={plant.id} item={plant} />;
+          return (
+            <div key={plant.id} className="ShoppingList-plant">
+              <PlantItem item={plant} />
+            </div>
+          );
         })}
       </div>
     );
