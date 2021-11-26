@@ -1,6 +1,19 @@
 import "./PlantItem.css";
+import { useContext } from "react";
+import PanierContext from "./../../Context/PanierContext";
 
 const PlantItem = ({ item }) => {
+  const { panierList, setPanierList, price, setPrice } =
+    useContext(PanierContext);
+
+  const handleClick = () => {
+    const updatedPanierList = [...panierList];
+    updatedPanierList.push(item);
+    setPanierList(updatedPanierList);
+    const updatedPrice = price + item.prix;
+    setPrice(updatedPrice);
+  };
+
   return (
     <div className="PlantItem">
       <span className="PlantItem-price">{item.prix}€</span>
@@ -34,7 +47,7 @@ const PlantItem = ({ item }) => {
           );
         })}
       </div>
-      <button className="PlantItem-add-button">Ajouter</button>
+      <button onClick={handleClick}>Ajouter</button>
     </div>
   );
 };

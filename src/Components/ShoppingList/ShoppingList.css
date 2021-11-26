@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 32px;
+  gap: 5%;
 }
 
 .ShoppingList-categorie {
